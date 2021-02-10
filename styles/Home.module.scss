@@ -1,0 +1,9 @@
+$pure-white-color: #fff;
+$radius: 30px;
+
+.main{
+    margin: 3em;
+    background-color: #08070C;
+    height: calc(100vh - 6em);
+    border-radius: $radius;
+}

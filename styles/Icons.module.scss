@@ -1,0 +1,11 @@
+$radius: 30px;
+
+.top_sec_icon{
+    background-color: #302F35;
+    width: 2.5em;
+    height: 2.5em;
+    display: grid;
+    place-items: center;
+    border-radius: $radius;
+    margin: .4em;
+}
