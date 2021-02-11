@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.scss'
-import TopSection from '../components/top_section/top'
+import RightSection from '../components/right_section/right_section'
+import LeftSection from '../components/left_section/left_section'
 
 export default function Home() {
   return (
@@ -10,8 +11,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <TopSection />    
+      <main className={styles.main}>       
+        
+        <LeftSection/>
+
+        <RightSection/>
+  
       </main>
     </div>
   )

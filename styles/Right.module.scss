@@ -1,20 +1,19 @@
 $pure-white-color: #fff;
 $radius: 30px;
 
-.top{
+.right{
     color: $pure-white-color;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 2em;
+    border:  1px solid yellow;
+    width: 80%;
+    padding-right: 2em;
+    padding-top: 2em;
 
-    h1{
-        width: 10%;
-    }
-    .top_right{
-        width: 70%;
+    .top{
+        width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-left: 1em;
 
         .icon_list{
             display: flex;
