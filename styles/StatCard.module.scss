@@ -1,0 +1,73 @@
+$radius: 30px;
+$first-card-color: rgb(254,185,90);
+$second-card-color:rgb(32,191,169);
+$last-card-color: rgb(235,119,107);
+
+
+.stat_card{
+    width: 30%;
+    padding: 1%;
+    border-radius: $radius;
+    filter: drop-shadow(0px 40px 30px rgba(0,0,0,1));
+    .stat_icons{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;                  
+       .stat_icon_bold{
+            padding: 5%;
+            border-radius: 30%;                        
+        }
+       
+        .stat_icon_bold > svg{
+            color: black; 
+        }
+
+    }
+    .stats_row{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1%;
+        p{
+            font-weight: 900;
+            font-size: 2vw;
+        }
+        img{
+            width: 6vw;
+            height: 1.5vw;
+        }
+
+    }
+
+}
+.stat_card > p{
+    padding-top: 1%;
+    font-weight: 100;
+    color: rgb(207, 197, 197);
+}
+
+.stat_card:first-of-type{
+    box-shadow: 1px -.5px $first-card-color;
+    background: $first-card-color;
+    background: linear-gradient(-113deg, rgba(254,185,90,.3) 0%, rgba(22,22,32,1) 49%, rgba(22,22,32,1) 100%);
+    .stat_icon_bold{
+        background-color: $first-card-color;                        
+    }
+}
+
+.stat_card:nth-of-type(2){
+    box-shadow: 1px -.5px $second-card-color;
+    background: $second-card-color;
+    background: linear-gradient(-113deg, rgba(32,191,169,.3) 0%, rgba(22,22,32,1) 49%, rgba(22,22,32,1) 100%);
+    .stat_icon_bold{
+        background-color: $second-card-color;                        
+    }
+}
+
+.stat_card:last-of-type{
+    box-shadow: 1px -.5px $last-card-color;
+    background: $last-card-color;
+    background: linear-gradient(-113deg, rgba(235,119,107,.3) 0%, rgba(22,22,32,1) 49%, rgba(22,22,32,1) 100%);
+    .stat_icon_bold{
+        background-color: $last-card-color;                        
+    }
+}
