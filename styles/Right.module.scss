@@ -7,6 +7,7 @@ $gray: #302F35;
     width: 80%;
     padding-right: 2em;
     padding-top: 2em;
+    position: relative;
 
     .top{
         width: 100%;
@@ -46,13 +47,16 @@ $gray: #302F35;
         margin-top: 1em;
         background-color: $gray;
         width: 100%;
-        height: 80%;
+        height: 85%;
         border-radius: $radius;
         .title_sec{
             padding: .8em 1.2em;
             display: flex;
             align-items: center;
             justify-content: space-between;
+            h1{
+                font-size: 1.1em;
+            }
             
             .filter_div{
                 display: flex;
@@ -68,9 +72,58 @@ $gray: #302F35;
         }
 
         .stats_card_list{
-            margin: 1.5%;
+            margin: 0% 1% 1% 1%;
             display: flex;
             justify-content: space-between;
+        }
+    }
+
+    .bottom_section{
+        padding: 2% 1% 1% 1%;
+        display: flex;
+        justify-content: space-between;
+        height: 65%;
+        .chart_section{
+            width: 70%;
+            height: 100%;
+            .chart_sec_header{
+                display: flex;
+                justify-content: space-between;
+                margin: .3em 0em;
+               h3{
+                   font-size: 1.1em;
+                   margin: 0;
+                   color: #fff;
+               }
+               .chart_title{
+                   display: flex;
+                   align-items: center;
+                    .span{
+                        font-weight: 300;
+                        color: #dfdee4;
+                        font-size: .8em;
+                    }
+               }
+               .drop_down{
+                    display: flex;
+                    border:  1px solid rgba(255,255,255,.4);
+                    align-items: center;
+                    padding: .2em;
+                    border-radius: 10px;
+                    font-size: 1em;
+    
+               }
+            }
+            
+        }
+        .recent_activities{
+            display: flex;
+            flex-direction: column;
+            width: 28%;
+            h4{
+                margin: 0;
+                font-size: 1.1em;
+            }
         }
     }
 }

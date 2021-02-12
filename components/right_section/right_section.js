@@ -1,10 +1,57 @@
 import styles from '../../styles/Right.module.scss'
-import { faBell, faCommentAlt, faGift , faCog, faSearch, faSortAmountDownAlt, faBold, faBlog, faBolt, faEllipsisV, faCrown, faPortrait, faMoneyBillAlt, faMobile, faMoneyCheck, faNetworkWired} from "@fortawesome/free-solid-svg-icons"
+import { faBell, faCommentAlt, faGift , faCog, faSearch, faSortAmountDownAlt, faBold, faEllipsisV, faMoneyCheck, faNetworkWired, faArrowDown, faArrowUp, faArrowRight} from "@fortawesome/free-solid-svg-icons"
 import TopSecIcon from '../top_sec_icon/top_sec_icon'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import StatCard from '../../components/stat_card/stat_card'
+import { LineChart, Line, CartesianGrid, XAxis, YAxis, ResponsiveContainer } from 'recharts'
+import RecentActivity from '../recent_activity/recent_activity';
 
-const TopSection = () =>{
+const RightSection = () =>{
+
+  const data = [
+    {
+      name: 'Mon',
+      uv: 4000,
+      pv: 2400,
+      amt: 2400,
+    },
+    {
+      name: 'Tue',
+      uv: 3000,
+      pv: 1398,
+      amt: 2210,
+    },
+    {
+      name: 'Wed',
+      uv: 2000,
+      pv: 9800,
+      amt: 2290,
+    },
+    {
+      name: 'Thur',
+      uv: 2780,
+      pv: 3908,
+      amt: 2000,
+    },
+    {
+      name: 'Fri',
+      uv: 1890,
+      pv: 4800,
+      amt: 2181,
+    },
+    {
+      name: 'Sat',
+      uv: 2390,
+      pv: 3800,
+      amt: 2500,
+    },
+    {
+      name: 'Sun',
+      uv: 3490,
+      pv: 4300,
+      amt: 2100,
+    },
+  ];
     return(
         <section className={styles.right}>
 
@@ -54,10 +101,52 @@ const TopSection = () =>{
                 graphic={'/svg/ib.svg'}
               />
             </section>
+            
+            <section className={styles.bottom_section}>
+             
+              <div className={styles.chart_section}>
+                <div className={styles.chart_sec_header}>
+                  <div className={styles.chart_title}>
+                    <h3>Market overview - <span className={styles.span}> Price value updates</span></h3>
+                  </div>
+
+                  <div className={styles.drop_down}>
+                    <p>Weekly ({new Date().getFullYear()})  
+                    </p>
+                  </div>
+                </div>
+              
+                  <ResponsiveContainer height='85%'>
+                    <LineChart data={data}>
+                      <Line type="monotone" dataKey="uv" stroke="#fff" />
+                      <CartesianGrid stroke="#646466"/>
+                      <XAxis dataKey='name'  stroke="#fff" axisLine={{ stroke: '#646466' }} />
+                      <YAxis stroke='#fff' axisLine={{ stroke: '#646466' }} />
+                    </LineChart>
+                  </ResponsiveContainer>
+              </div>
+              
+              <div className={styles.recent_activities}>
+                <h4>Recent Activities</h4>
+                <RecentActivity 
+                  icon={faArrowUp}
+                  currency={'Shillings'}
+                /> 
+                <RecentActivity 
+                  icon={faArrowRight}
+                  currency={'Bitcoin'}
+                />  
+                 <RecentActivity 
+                  icon={faArrowDown}
+                  currency={'USD'}
+                />                       
+              </div>
+          </section>
 
           </section>
+          
         </section>
     )
 }
 
-export default TopSection;
+export default RightSection;
