@@ -1,10 +1,15 @@
-$pure-white-color: #fff;
-$radius: 30px;
-
 .main{
-    margin: 3em;
+    margin: 2em;
     background-color: #08070C;
-    height: calc(100vh - 6em);
-    border-radius: $radius;
+    height: calc(100vh - 4em);
+    border-radius: 20px;
     display: flex;
+}
+
+@media screen and (max-width:900px){
+    .main{
+        margin: 0;
+        height: 100vh;
+        border-radius: 0;
+    }
 }
