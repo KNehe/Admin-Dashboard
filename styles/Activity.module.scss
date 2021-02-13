@@ -22,3 +22,20 @@
         padding-left: 2%;
     }
 }
+
+@media screen and (max-width:900px){
+    .activity{
+        margin-bottom: 1em;
+        .activity_icon{
+            border-radius: 40%;
+            padding: .2em;
+            svg{
+                height: .4em;
+                width: .4em;
+            }
+        }
+        p{
+            font-size: .9em;
+        }
+    }
+}

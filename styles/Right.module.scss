@@ -7,7 +7,6 @@ $gray: #302F35;
     width: 80%;
     padding-right: 2em;
     padding-top: 2em;
-    position: relative;
 
     .top{
         width: 100%;
@@ -123,6 +122,51 @@ $gray: #302F35;
             h4{
                 margin: 0;
                 font-size: 1.1em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px){
+    .right{
+        width: 100%;
+        padding: 0em .2em;
+        .top{
+            margin-left: 0em;
+        }
+        .menu_item_content{
+            height: 90%;
+            margin-top: .2em;
+        }
+
+        .bottom_section{
+            .chart_section{
+                width: 70%;
+                height: 100%;
+                .chart_sec_header{
+                    margin: .4em 0em;
+                   h3{
+                       font-size: 1em;
+                   }
+                   .chart_title{
+                        .span{
+                            font-size: .7em;
+                        }
+                   }
+                   .drop_down{
+                        padding: .1em;
+                        border-radius: 5px;
+                        font-size: .7em;
+                        text-align: center;
+                   }
+                }
+                
+            }
+            .recent_activities{
+                h4{
+                    font-size: 1em;
+                    margin-bottom: .7em;
+                }
             }
         }
     }
