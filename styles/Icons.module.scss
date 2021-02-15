@@ -9,3 +9,11 @@ $radius: 30px;
     border-radius: $radius;
     margin: .4em;
 }
+
+@media screen and (max-width: 900px){
+    .top_sec_icon{
+        width: 2em;
+        height: 2em;
+        margin: .3em;
+    }
+}

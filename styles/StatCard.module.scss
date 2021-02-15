@@ -29,7 +29,7 @@ $last-card-color: rgb(235,119,107);
         padding-top: 1%;
         p{
             font-weight: 900;
-            font-size: 2vw;
+            font-size: 1.3em;
         }
         img{
             width: 6vw;
@@ -59,7 +59,10 @@ $last-card-color: rgb(235,119,107);
     background: $second-card-color;
     background: linear-gradient(-113deg, rgba(32,191,169,.3) 0%, rgba(22,22,32,1) 49%, rgba(22,22,32,1) 100%);
     .stat_icon_bold{
-        background-color: $second-card-color;                        
+        background-color: $second-card-color; 
+        svg{
+            color: rgb(255, 241, 241);
+        }                       
     }
 }
 
@@ -68,6 +71,33 @@ $last-card-color: rgb(235,119,107);
     background: $last-card-color;
     background: linear-gradient(-113deg, rgba(235,119,107,.3) 0%, rgba(22,22,32,1) 49%, rgba(22,22,32,1) 100%);
     .stat_icon_bold{
-        background-color: $last-card-color;                        
+        background-color: $last-card-color; 
+        svg{
+            color: rgb(255, 241, 241);
+        }                         
     }
+}
+
+@media screen and (max-width: 900px){
+    .stat_card{
+        padding: .7em;
+        .stats_row{
+            display: flex;
+            justify-content: space-between;
+            padding-top: 1.5%;
+            p{
+                font-weight: 900;
+                font-size: 1em;
+            }
+            img{
+                width: 1em;
+                height: 2vw;
+            }
+        }
+       
+    }
+    .stat_card > p{
+        font-size: .8em;
+    }
+
 }
