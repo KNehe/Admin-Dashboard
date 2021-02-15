@@ -57,7 +57,7 @@ const RightSection = () =>{
 
   
   const [leftSecStyles, setLeftSectionStyles ] = useState({
-    transform:'translateX(-300px)'
+    transform:'translateX(-500px)'
   });
 
   const [backDropStyles, setbackDropStyles] = useState({
@@ -78,7 +78,7 @@ const RightSection = () =>{
   const onBackdropClickedHandler = event =>{
     event.preventDefault();
       setLeftSectionStyles({
-        transform:'translateX(-300px)'
+        transform:'translateX(-500px)'
       });  
       
       setbackDropStyles({
