@@ -56,6 +56,11 @@ const RightSection = () =>{
         <section className={styles.right}>
 
           <div className={styles.top}>
+            <div className={styles.humberger_icon}>
+              <div className={styles.line_1}></div>
+              <div className={styles.line_2}></div>
+              <div className={styles.line_3}></div>
+            </div>
             <div className={styles.search_box}>
               <FontAwesomeIcon icon={faSearch}/>
               <input type='text' placeholder='Search'/>

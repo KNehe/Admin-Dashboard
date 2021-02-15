@@ -133,6 +133,20 @@ $gray: #302F35;
         padding: 0em .2em;
         .top{
             margin-left: 0em;
+            .humberger_icon{
+                width: 1.5em;
+                .line_1,.line_2,.line_3{
+                    border-bottom: 2px solid #fff;
+                }
+                .line_2,.line_3{
+                    padding-bottom: .5em;
+                }
+            }
+            .search_box{
+                border-radius: 25px;
+                padding:.4em;
+                width: 35%;
+            }
         }
         .menu_item_content{
             height: 90%;
