@@ -2,8 +2,10 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.scss'
 import RightSection from '../components/right_section/right_section'
 import LeftSection from '../components/left_section/left_section'
+import graphData from '../local_db/graph_data';
 
-export default function Home() {
+export default function Home({graphData}) {
+
   return (
     <div>
       <Head>
@@ -15,9 +17,18 @@ export default function Home() {
         
         <LeftSection/>
 
-        <RightSection/>
+        <RightSection data={graphData}/>
   
       </main>
     </div>
   )
+}
+
+export async function getStaticProps(){
+ 
+  return {
+    props:{
+      graphData
+    }
+  }
 }
