@@ -1,5 +1,11 @@
 This is an Admin Dashboard idea created using NextJs
 
+<table>
+  <tr>
+      <td><img src="/../screenshots/Screenshot.png" width="100%" height="480"></td>
+  </tr>
+ </table>
+
 ## Getting Started
 
 - Open [https://admin-dashboard-omega.vercel.app/](https://admin-dashboard-omega.vercel.app/) with your browser to see the site live
