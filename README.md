@@ -2,7 +2,7 @@ This is an Admin Dashboard idea created using NextJs
 
 <table>
   <tr>
-      <td><img src="/../screenshots/Screenshot.png" width="80%" height="480"></td>
+      <td><img src="/../screenshots/Screenshot.png" width="100%" height="480"></td>
   </tr>
  </table>
 
